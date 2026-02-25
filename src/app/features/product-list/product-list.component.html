@@ -7,7 +7,10 @@
             <div class="card-body">
                 <h5 class="card-title">{{p.name}}</h5>
                 <p class="card-text">{{p.price | currency:'USD':'symbol':'1.2-2':'en'}}</p>
-                <button (click)="addToCart(p)" class="btn btn-primary">Add to cart</button>
+                <div class="btns-wrapper">
+                    <button (click)="addToCart(p)" class="btn btn-primary">Add to cart</button>
+                    <button class="btn btn-primary">View details</button>
+                </div>
             </div>
         </div>
     }

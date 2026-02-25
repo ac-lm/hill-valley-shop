@@ -48,8 +48,8 @@ export class ProductListComponent {
   private showNotification(message: string) {
     this.snackBar.open(message, 'Cerrar', {
       duration: 5000, // Duración en milisegundos (3 segundos)
-      horizontalPosition: 'right',
-      verticalPosition: 'top'
+      horizontalPosition: 'center',
+      verticalPosition: 'bottom'
     });
   }
 
